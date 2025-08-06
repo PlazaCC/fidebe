@@ -17,9 +17,9 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@panhasilva/my-lib-hello-2": [ "./lib/main.tsx" ]
+      "fidebe-widget": ["./lib/FidebeWidget.tsx"]
     }
   },
-  "include": ["./src", "./lib"],
+  "include": ["./src", "./lib", "./types"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

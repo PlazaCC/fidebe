@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to boilerplate-lib-vite-react 👋</h1>
+<h1 align="center">Fidebe Widget</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/panhavsilva/boilerplate-lib-vite-react#readme" target="_blank">
@@ -12,7 +12,7 @@
   </a>
 </p>
 
-> Boilerplate to create library with Vite, Typescript and React.js
+> React floating feedback widget with screenshot capture.
 
 <br />
 
