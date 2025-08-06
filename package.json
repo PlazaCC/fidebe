@@ -1,11 +1,11 @@
 {
-  "name": "boilerplate-lib-vite-react",
-  "version": "0.0.0",
-  "description": "Boilerplate to create library with Vite, Typescript and React.js",
+  "name": "fidebe-widget",
+  "version": "0.1.0",
+  "description": "Floating feedback widget for React applications with screenshot capture.",
   "license": "MIT",
-  "main": "./dist/my-lib-hello-2.umd.js",
-  "module": "./dist/my-lib-hello-2.es.js",
-  "types": "./dist/lib/main.d.ts",
+  "main": "./dist/fidebe-widget.umd.js",
+  "module": "./dist/fidebe-widget.es.js",
+  "types": "./dist/FidebeWidget.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -21,22 +21,25 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/my-lib-hello-2.es.js",
-      "require": "./dist/my-lib-hello-2.umd.js"
+      "import": "./dist/fidebe-widget.es.js",
+      "require": "./dist/fidebe-widget.umd.js"
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/panhavsilva/boilerplate-lib-vite-react.git"
+    "url": ""
   },
-  "keywords": [],
-  "author": "Pâmela Vieira da Silva - @panhavsilva",
+  "keywords": ["feedback", "widget", "screenshot"],
+  "author": "",
   "bugs": {
-    "url": "https://github.com/panhavsilva/boilerplate-lib-vite-react/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/panhavsilva/boilerplate-lib-vite-react#readme",
+  "homepage": "",
   "peerDependencies": {
     "react": ">=17.x"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1"
   },
   "devDependencies": {
     "@types/node": "17.0.21",
@@ -60,6 +63,9 @@
     "vite": "2.9.17",
     "vite-plugin-dts": "0.9.10",
     "vite-plugin-linter": "0.2.4",
-    "vite-tsconfig-paths": "3.4.1"
+    "vite-tsconfig-paths": "3.4.1",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.4.1"
   }
 }

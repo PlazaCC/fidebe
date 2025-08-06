@@ -3,5 +3,6 @@
 index.html
 lib
 src
+types
 tsconfig.json
 vite.config.ts

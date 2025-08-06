@@ -15,7 +15,7 @@ export default defineConfig(configEnv => ({
       linters: [new EsLinter({ configEnv })],
     }),
     dts({
-      include: ['lib/main.tsx'],
+      include: ['lib/FidebeWidget.tsx'],
       beforeWriteFile: (filePath, content) => ({
         filePath: filePath.replace('/lib', ''),
         content,
@@ -24,9 +24,9 @@ export default defineConfig(configEnv => ({
   ],
   build: {
     lib: {
-      entry: resolve('lib', 'main.tsx'),
-      name: 'ReactFeatureFlag',
-      fileName: (format) => `my-lib-hello-2.${format}.js`,
+      entry: resolve('lib', 'FidebeWidget.tsx'),
+      name: 'FidebeWidget',
+      fileName: (format) => `fidebe-widget.${format}.js`,
     },
     rollupOptions: {
       external: ['react'],
